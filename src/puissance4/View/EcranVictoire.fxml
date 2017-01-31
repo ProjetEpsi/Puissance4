@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="puissance4.Controller.EcranVictoireController">
+   <top>
+      <Label text="Puissance 4" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Italic" size="48.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets top="10.0" />
+         </BorderPane.margin>
+      </Label>
+   </top>
+   <center>
+      <VBox alignment="CENTER" spacing="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="400.0" fitWidth="500.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Image/Coupe-or.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="gagnant" text="Joueur">
+               <font>
+                  <Font name="System Bold" size="48.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#selectionJoueur" prefHeight="40.0" prefWidth="130.0" text="Sélection Joueur" />
+                  <Button mnemonicParsing="false" onAction="#rejouer" prefHeight="40.0" prefWidth="130.0" text="Rejouer" />
+                  <Button mnemonicParsing="false" onAction="#accueil" prefHeight="40.0" prefWidth="130.0" text="Accueil" />
+                  <Button fx:id="quitter" mnemonicParsing="false" onAction="#quitter" prefHeight="40.0" prefWidth="130.0" text="Quitter" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
